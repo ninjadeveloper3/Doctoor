@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="FontFont_FF.Mark.Pro.otf">
+            <string>MarkPro</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SelectServicesViewController" customModule="HomeMedics" customModuleProvider="target">
+            <connections>
+                <outlet property="cityName" destination="uEQ-8L-6RO" id="ZRw-Zp-sqP"/>
+                <outlet property="textView" destination="7nu-EN-agl" id="4TA-Rq-6mu"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Select Service Providers" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uEQ-8L-6RO" customClass="MBUITextField" customModule="HomeMedics" customModuleProvider="target">
+                    <rect key="frame" x="40" y="94" width="334" height="40"/>
+                    <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="4Eh-SM-TSb"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <textInputTraits key="textInputTraits" textContentType="name"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                            <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                            <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
+                            <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="selectedTitleColor">
+                            <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="maxLength">
+                            <integer key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
+                            <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="selectedLineColor">
+                            <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="lineHeight">
+                            <real key="value" value="0.5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="selectedLineHeight">
+                            <real key="value" value="0.5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Comments" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZnC-wH-lwN">
+                    <rect key="frame" x="40" y="174" width="130" height="22"/>
+                    <fontDescription key="fontDescription" name="MarkPro" family="Mark Pro" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7nu-EN-agl">
+                    <rect key="frame" x="40" y="216" width="334" height="150"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="150" id="BhY-at-kNZ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="MarkPro" family="Mark Pro" pointSize="17"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wDd-rE-945" customClass="MBButton" customModule="HomeMedics" customModuleProvider="target">
+                    <rect key="frame" x="65" y="416" width="284" height="60"/>
+                    <color key="backgroundColor" red="0.2632602751" green="0.18259903790000001" blue="0.46162676809999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="GJs-Rt-RKa"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="MarkPro" family="Mark Pro" pointSize="17"/>
+                    <state key="normal" title="Submit">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="submitButtonTapped:" destination="-1" eventType="touchUpInside" id="Md4-QB-Ocd"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0eg-QZ-4bD" customClass="MBButton" customModule="HomeMedics" customModuleProvider="target">
+                    <rect key="frame" x="344" y="792" width="50" height="50"/>
+                    <color key="backgroundColor" red="0.2632602751" green="0.18259903790000001" blue="0.46162676809999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="cxY-7L-xe5"/>
+                        <constraint firstAttribute="height" constant="50" id="rFO-dR-eAM"/>
+                    </constraints>
+                    <state key="normal" image="help"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                            <color key="value" red="0.04789039481" green="0.04789039481" blue="0.04789039481" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                            <size key="value" width="-7" height="4"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="fabButtonTapped:" destination="-1" eventType="touchUpInside" id="neu-9B-kTd"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cUU-3L-adB">
+                    <rect key="frame" x="8" y="508" width="398" height="65"/>
+                    <string key="text">By placing your order, Our Customer Service Representative will call you shortly to customize
+the service for you.</string>
+                    <fontDescription key="fontDescription" name="MarkPro" family="Mark Pro" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="uEQ-8L-6RO" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="50" id="2yh-6q-9ZG"/>
+                <constraint firstItem="wDd-rE-945" firstAttribute="top" secondItem="7nu-EN-agl" secondAttribute="bottom" constant="50" id="6cA-Vb-arp"/>
+                <constraint firstItem="7nu-EN-agl" firstAttribute="trailing" secondItem="uEQ-8L-6RO" secondAttribute="trailing" id="80c-h3-2Vc"/>
+                <constraint firstItem="wDd-rE-945" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="65" id="B3C-gB-IBS"/>
+                <constraint firstItem="7nu-EN-agl" firstAttribute="top" secondItem="ZnC-wH-lwN" secondAttribute="bottom" constant="20" id="Lhd-w0-WS8"/>
+                <constraint firstItem="cUU-3L-adB" firstAttribute="top" secondItem="wDd-rE-945" secondAttribute="bottom" constant="32" id="MlS-yO-2uo"/>
+                <constraint firstItem="uEQ-8L-6RO" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="Sgr-x7-RrD"/>
+                <constraint firstItem="cUU-3L-adB" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="Yf6-jK-IGP"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="uEQ-8L-6RO" secondAttribute="trailing" constant="40" id="aBS-zb-76Z"/>
+                <constraint firstItem="7nu-EN-agl" firstAttribute="leading" secondItem="uEQ-8L-6RO" secondAttribute="leading" id="c5i-bZ-rjf"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="0eg-QZ-4bD" secondAttribute="trailing" constant="20" id="ePZ-7U-0Fc"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="wDd-rE-945" secondAttribute="trailing" constant="65" id="g1M-R3-cNO"/>
+                <constraint firstItem="ZnC-wH-lwN" firstAttribute="top" secondItem="uEQ-8L-6RO" secondAttribute="bottom" constant="40" id="i60-7m-Rkj"/>
+                <constraint firstItem="cUU-3L-adB" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="kY0-84-gMy"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="0eg-QZ-4bD" secondAttribute="bottom" constant="20" id="v3Q-eX-1CU"/>
+                <constraint firstAttribute="trailing" secondItem="cUU-3L-adB" secondAttribute="trailing" constant="8" id="w47-et-dn1"/>
+                <constraint firstItem="ZnC-wH-lwN" firstAttribute="leading" secondItem="uEQ-8L-6RO" secondAttribute="leading" id="zVA-p5-CVu"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="137.68115942028987" y="128.57142857142856"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="help" width="35" height="35"/>
+    </resources>
+</document>

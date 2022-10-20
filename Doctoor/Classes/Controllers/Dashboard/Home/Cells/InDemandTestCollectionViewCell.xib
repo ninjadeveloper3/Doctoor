@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="FontFont_FF.Mark.Pro.Bold.otf">
+            <string>MarkPro-Bold</string>
+        </array>
+        <array key="FontFont_FF.Mark.Pro.Light.otf">
+            <string>MarkPro-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="InDemandTestCollectionViewCell" customModule="HomeMedics" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="135" height="160"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="135" height="160"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6U2-gy-k3v" customClass="HMView" customModule="HomeMedics" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="135" height="160"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Online" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Abd-YY-8u7">
+                                <rect key="frame" x="30" y="74" width="52.5" height="22"/>
+                                <fontDescription key="fontDescription" name="MarkPro-Light" family="Mark Pro" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lab Test" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GOE-IN-E54">
+                                <rect key="frame" x="30" y="97" width="97" height="22"/>
+                                <fontDescription key="fontDescription" name="MarkPro-Bold" family="Mark Pro" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow" translatesAutoresizingMaskIntoConstraints="NO" id="08U-eE-ION">
+                                <rect key="frame" x="30" y="121" width="30" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="HqN-un-e80"/>
+                                    <constraint firstAttribute="height" constant="25" id="zkY-3h-2aj"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qkQ-QS-BtE" customClass="HMView" customModule="HomeMedics" customModuleProvider="target">
+                                <rect key="frame" x="30" y="13" width="55" height="55"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TS0-3R-Zn7">
+                                        <rect key="frame" x="5" y="5" width="45" height="45"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="6FW-r3-lnk"/>
+                                    <constraint firstAttribute="bottom" secondItem="TS0-3R-Zn7" secondAttribute="bottom" constant="5" id="B9Z-6Q-TH6"/>
+                                    <constraint firstItem="TS0-3R-Zn7" firstAttribute="leading" secondItem="qkQ-QS-BtE" secondAttribute="leading" constant="5" id="KjO-nk-pDx"/>
+                                    <constraint firstAttribute="width" constant="55" id="htS-6Z-T0x"/>
+                                    <constraint firstAttribute="trailing" secondItem="TS0-3R-Zn7" secondAttribute="trailing" constant="5" id="l2m-w9-qkh"/>
+                                    <constraint firstItem="TS0-3R-Zn7" firstAttribute="top" secondItem="qkQ-QS-BtE" secondAttribute="top" constant="5" id="vAo-W2-dSY"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96068006750000001" green="0.96084433790000001" blue="0.96066969629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="08U-eE-ION" firstAttribute="top" secondItem="GOE-IN-E54" secondAttribute="bottom" constant="2" id="IKx-Kk-pMA"/>
+                            <constraint firstItem="GOE-IN-E54" firstAttribute="top" secondItem="Abd-YY-8u7" secondAttribute="bottom" constant="1" id="PsW-B0-5to"/>
+                            <constraint firstItem="Abd-YY-8u7" firstAttribute="leading" secondItem="qkQ-QS-BtE" secondAttribute="leading" id="QDq-UI-sO8"/>
+                            <constraint firstAttribute="trailing" secondItem="GOE-IN-E54" secondAttribute="trailing" constant="8" id="Qfe-ou-Qce"/>
+                            <constraint firstItem="08U-eE-ION" firstAttribute="leading" secondItem="qkQ-QS-BtE" secondAttribute="leading" id="WQT-iP-WHZ"/>
+                            <constraint firstItem="qkQ-QS-BtE" firstAttribute="top" secondItem="6U2-gy-k3v" secondAttribute="top" constant="13" id="iTG-nW-Ad4"/>
+                            <constraint firstItem="qkQ-QS-BtE" firstAttribute="leading" secondItem="6U2-gy-k3v" secondAttribute="leading" constant="30" id="mAp-yG-UDR"/>
+                            <constraint firstItem="GOE-IN-E54" firstAttribute="leading" secondItem="qkQ-QS-BtE" secondAttribute="leading" id="qES-nL-dMi"/>
+                            <constraint firstAttribute="bottom" secondItem="08U-eE-ION" secondAttribute="bottom" constant="14" id="tvy-Kl-Imm"/>
+                            <constraint firstItem="Abd-YY-8u7" firstAttribute="top" secondItem="qkQ-QS-BtE" secondAttribute="bottom" constant="6" id="x2k-uo-iDy"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="12"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="6U2-gy-k3v" secondAttribute="trailing" id="5bC-4z-sO6"/>
+                <constraint firstItem="6U2-gy-k3v" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="So3-Nl-s9J"/>
+                <constraint firstAttribute="bottom" secondItem="6U2-gy-k3v" secondAttribute="bottom" id="fYs-WM-Ulf"/>
+                <constraint firstItem="6U2-gy-k3v" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="j5p-hf-SQB"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <connections>
+                <outlet property="backView" destination="qkQ-QS-BtE" id="ZuU-7r-3Ai"/>
+                <outlet property="firstLabel" destination="Abd-YY-8u7" id="fof-7D-mTZ"/>
+                <outlet property="logoImageView" destination="TS0-3R-Zn7" id="rnS-Cg-Ng8"/>
+                <outlet property="secondLabel" destination="GOE-IN-E54" id="vmT-pA-BfB"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="153.34821428571428"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="arrow" width="21" height="13"/>
+    </resources>
+</document>

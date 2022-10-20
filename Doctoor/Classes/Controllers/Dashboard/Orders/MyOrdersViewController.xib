@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyOrdersViewController" customModule="HomeMedics" customModuleProvider="target">
+            <connections>
+                <outlet property="myOrdersTableView" destination="VdG-wQ-HGM" id="t8e-qc-Pny"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="VdG-wQ-HGM">
+                    <rect key="frame" x="7" y="44" width="400" height="818"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <inset key="scrollIndicatorInsets" minX="0.0" minY="10" maxX="0.0" maxY="10"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="ZaS-F2-IIP"/>
+                        <outlet property="delegate" destination="-1" id="tRl-N4-nXt"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qzg-kn-JHL" customClass="MBButton" customModule="HomeMedics" customModuleProvider="target">
+                    <rect key="frame" x="344" y="792" width="50" height="50"/>
+                    <color key="backgroundColor" red="0.2632602751" green="0.18259903790000001" blue="0.46162676809999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="Ayt-Md-WqZ"/>
+                        <constraint firstAttribute="width" constant="50" id="r3S-Fg-Fc7"/>
+                    </constraints>
+                    <state key="normal" image="help"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                            <color key="value" red="0.04789039481" green="0.04789039481" blue="0.04789039481" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                            <size key="value" width="-7" height="4"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="fabTapped:" destination="-1" eventType="touchUpInside" id="FTR-fL-pRR"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.80523651839999999" green="0.8850821257" blue="0.96841710810000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="VdG-wQ-HGM" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="9kp-b5-86c"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="VdG-wQ-HGM" secondAttribute="trailing" constant="7" id="Ghr-u2-NqZ"/>
+                <constraint firstItem="VdG-wQ-HGM" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="7" id="PQh-r8-IzF"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Qzg-kn-JHL" secondAttribute="bottom" constant="20" id="XtB-Go-bE4"/>
+                <constraint firstItem="VdG-wQ-HGM" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="hyk-X8-A1B"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Qzg-kn-JHL" secondAttribute="trailing" constant="20" id="wth-8p-fKK"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="137.68115942028987" y="93.75"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="help" width="35" height="35"/>
+    </resources>
+</document>

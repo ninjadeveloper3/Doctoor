@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="FontFont_FF.Mark.Pro.Bold.otf">
+            <string>MarkPro-Bold</string>
+        </array>
+        <array key="FontFont_FF.Mark.Pro.Light.otf">
+            <string>MarkPro-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CheckoutStepThreeViewController" customModule="HomeMedics" customModuleProvider="target">
+            <connections>
+                <outlet property="cardAcceptLabel" destination="KV9-8M-2eQ" id="bSJ-xc-pPB"/>
+                <outlet property="cashOnDeliveryCardView" destination="4EW-Fs-MXQ" id="f6p-gp-abT"/>
+                <outlet property="ccCardView" destination="7HP-zo-kLt" id="G5E-Gi-pkN"/>
+                <outlet property="codLabel" destination="nwu-cY-2iH" id="dbj-yl-qyG"/>
+                <outlet property="easyPaisaCC" destination="whV-Mr-kta" id="oo5-BO-pLM"/>
+                <outlet property="easyPaisaView" destination="L0q-cN-QU1" id="FIy-xg-g1H"/>
+                <outlet property="mobileAccountView" destination="Bqz-IN-6aa" id="nAO-hV-2Hu"/>
+                <outlet property="paymentImage" destination="3JC-ga-gcJ" id="0w7-gS-Uap"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="882"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oTQ-Zs-axy" customClass="HMView" customModule="HomeMedics" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="44" width="414" height="120"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="billing-color" translatesAutoresizingMaskIntoConstraints="NO" id="K2F-4f-GXd">
+                            <rect key="frame" x="157" y="20" width="80" height="70"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="80" id="Wl7-iH-CtI"/>
+                                <constraint firstAttribute="height" constant="70" id="zaf-VG-PkF"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Billing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qlR-CK-C4C">
+                            <rect key="frame" x="183" y="90" width="38.5" height="16.5"/>
+                            <fontDescription key="fontDescription" name="MarkPro-Bold" family="Mark Pro" pointSize="13"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="payment-color" translatesAutoresizingMaskIntoConstraints="NO" id="dMm-2j-7jX">
+                            <rect key="frame" x="257" y="20" width="80" height="70"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="70" id="0KM-0Z-vAt"/>
+                                <constraint firstAttribute="width" constant="80" id="qXn-3A-J3y"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sj9-Wg-W9e">
+                            <rect key="frame" x="273.5" y="90" width="57" height="16.5"/>
+                            <fontDescription key="fontDescription" name="MarkPro-Bold" family="Mark Pro" pointSize="13"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shipping-color" translatesAutoresizingMaskIntoConstraints="NO" id="fzX-3x-AxL">
+                            <rect key="frame" x="57" y="20" width="80" height="70"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="70" id="4MW-5q-fsR"/>
+                                <constraint firstAttribute="width" constant="80" id="bHy-hI-4EY"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shipping" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="syq-Xb-y0M">
+                            <rect key="frame" x="74.5" y="90" width="55" height="16.5"/>
+                            <fontDescription key="fontDescription" name="MarkPro-Bold" family="Mark Pro" pointSize="13"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.96068006750000001" green="0.96084433790000001" blue="0.96066969629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="K2F-4f-GXd" firstAttribute="top" secondItem="oTQ-Zs-axy" secondAttribute="top" constant="20" id="08U-lX-0NC"/>
+                        <constraint firstItem="dMm-2j-7jX" firstAttribute="leading" secondItem="K2F-4f-GXd" secondAttribute="trailing" constant="20" id="0DY-EZ-WrX"/>
+                        <constraint firstItem="qlR-CK-C4C" firstAttribute="top" secondItem="K2F-4f-GXd" secondAttribute="bottom" id="2wy-qt-msu"/>
+                        <constraint firstItem="fzX-3x-AxL" firstAttribute="centerY" secondItem="K2F-4f-GXd" secondAttribute="centerY" id="CTj-HK-MPf"/>
+                        <constraint firstItem="sj9-Wg-W9e" firstAttribute="top" secondItem="dMm-2j-7jX" secondAttribute="bottom" id="J9w-UG-dCl"/>
+                        <constraint firstItem="K2F-4f-GXd" firstAttribute="centerX" secondItem="oTQ-Zs-axy" secondAttribute="centerX" constant="-10" id="KsP-aD-S6W"/>
+                        <constraint firstItem="K2F-4f-GXd" firstAttribute="leading" secondItem="fzX-3x-AxL" secondAttribute="trailing" constant="20" id="dUl-MP-G4u"/>
+                        <constraint firstItem="sj9-Wg-W9e" firstAttribute="centerX" secondItem="dMm-2j-7jX" secondAttribute="centerX" constant="5" id="fGy-R3-hvV"/>
+                        <constraint firstItem="syq-Xb-y0M" firstAttribute="top" secondItem="fzX-3x-AxL" secondAttribute="bottom" id="gbp-Um-2GA"/>
+                        <constraint firstAttribute="height" constant="120" id="n4C-OE-JGi"/>
+                        <constraint firstItem="syq-Xb-y0M" firstAttribute="centerX" secondItem="fzX-3x-AxL" secondAttribute="centerX" constant="5" id="otO-rd-M8A"/>
+                        <constraint firstItem="dMm-2j-7jX" firstAttribute="centerY" secondItem="K2F-4f-GXd" secondAttribute="centerY" id="wIw-L8-REe"/>
+                        <constraint firstItem="qlR-CK-C4C" firstAttribute="centerX" secondItem="K2F-4f-GXd" secondAttribute="centerX" constant="5" id="xaw-N6-Hkf"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                            <color key="value" red="0.04789039481" green="0.04789039481" blue="0.04789039481" alpha="0.029999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                            <size key="value" width="-7" height="4"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rWH-d7-Tb8">
+                    <rect key="frame" x="0.0" y="164" width="414" height="684"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eqh-8e-BFw">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="690"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bqz-IN-6aa" customClass="HMView" customModule="HomeMedics" customModuleProvider="target">
+                                    <rect key="frame" x="20" y="20" width="374" height="90"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jazz-cash" translatesAutoresizingMaskIntoConstraints="NO" id="3JC-ga-gcJ">
+                                            <rect key="frame" x="10" y="20" width="90" height="50"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="50" id="64L-BP-aqt"/>
+                                                <constraint firstAttribute="width" constant="90" id="quN-PD-TqW"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mobile Wallet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nwu-cY-2iH">
+                                            <rect key="frame" x="115" y="34" width="112.5" height="22"/>
+                                            <fontDescription key="fontDescription" name="MarkPro-Light" family="Mark Pro" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow" translatesAutoresizingMaskIntoConstraints="NO" id="02s-hH-0tf">
+                                            <rect key="frame" x="314" y="32.5" width="30" height="25"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="30" id="2sP-uf-pGW"/>
+                                                <constraint firstAttribute="height" constant="25" id="rjc-6d-Kz1"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="nwu-cY-2iH" firstAttribute="centerY" secondItem="3JC-ga-gcJ" secondAttribute="centerY" id="8ms-ma-hHk"/>
+                                        <constraint firstItem="02s-hH-0tf" firstAttribute="centerY" secondItem="Bqz-IN-6aa" secondAttribute="centerY" id="GHH-iz-ZCy"/>
+                                        <constraint firstItem="nwu-cY-2iH" firstAttribute="leading" secondItem="3JC-ga-gcJ" secondAttribute="trailing" constant="15" id="Kfa-C8-T3x"/>
+                                        <constraint firstItem="3JC-ga-gcJ" firstAttribute="centerY" secondItem="Bqz-IN-6aa" secondAttribute="centerY" id="WrC-pD-wSq"/>
+                                        <constraint firstAttribute="height" constant="90" id="s9E-rV-10N"/>
+                                        <constraint firstItem="3JC-ga-gcJ" firstAttribute="leading" secondItem="Bqz-IN-6aa" secondAttribute="leading" constant="10" id="ttd-iz-Mmb"/>
+                                        <constraint firstAttribute="trailing" secondItem="02s-hH-0tf" secondAttribute="trailing" constant="30" id="wMf-z9-QpZ"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="12"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                            <real key="value" value="3"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                            <size key="value" width="-7" height="4"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                            <color key="value" red="0.04789039481" green="0.04789039481" blue="0.04789039481" alpha="0.029999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L0q-cN-QU1" customClass="HMView" customModule="HomeMedics" customModuleProvider="target">
+                                    <rect key="frame" x="20" y="130" width="374" height="90"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="epaisa" translatesAutoresizingMaskIntoConstraints="NO" id="frg-Vb-l1i">
+                                            <rect key="frame" x="10" y="20" width="90" height="50"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="90" id="abn-Kd-M0f"/>
+                                                <constraint firstAttribute="height" constant="50" id="dar-0v-eFY"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mobile Wallet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vU5-Jv-sTR">
+                                            <rect key="frame" x="115" y="34" width="112.5" height="22"/>
+                                            <fontDescription key="fontDescription" name="MarkPro-Light" family="Mark Pro" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow" translatesAutoresizingMaskIntoConstraints="NO" id="zeA-AT-VwI">
+                                            <rect key="frame" x="314" y="32.5" width="30" height="25"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="30" id="ODj-KY-TDy"/>
+                                                <constraint firstAttribute="height" constant="25" id="TgH-kr-cKC"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="zeA-AT-VwI" firstAttribute="centerY" secondItem="L0q-cN-QU1" secondAttribute="centerY" id="3IW-KZ-biX"/>
+                                        <constraint firstAttribute="trailing" secondItem="zeA-AT-VwI" secondAttribute="trailing" constant="30" id="4f9-bH-nU5"/>
+                                        <constraint firstItem="vU5-Jv-sTR" firstAttribute="leading" secondItem="frg-Vb-l1i" secondAttribute="trailing" constant="15" id="5sP-3C-myN"/>
+                                        <constraint firstItem="frg-Vb-l1i" firstAttribute="leading" secondItem="L0q-cN-QU1" secondAttribute="leading" constant="10" id="aQn-oQ-BGR"/>
+                                        <constraint firstItem="vU5-Jv-sTR" firstAttribute="centerY" secondItem="frg-Vb-l1i" secondAttribute="centerY" id="iEA-Kq-xK0"/>
+                                        <constraint firstItem="frg-Vb-l1i" firstAttribute="centerY" secondItem="L0q-cN-QU1" secondAttribute="centerY" id="ioU-Bz-lya"/>
+                                        <constraint firstAttribute="height" constant="90" id="lyN-Zq-9Sg"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="12"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                            <real key="value" value="3"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                            <size key="value" width="-7" height="4"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                            <color key="value" red="0.04789039481" green="0.04789039481" blue="0.04789039481" alpha="0.029999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4EW-Fs-MXQ" customClass="HMView" customModule="HomeMedics" customModuleProvider="target">
+                                    <rect key="frame" x="20" y="460" width="374" height="90"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cash_on_delivery-512" translatesAutoresizingMaskIntoConstraints="NO" id="NhH-ag-Met">
+                                            <rect key="frame" x="10" y="20" width="90" height="50"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="50" id="XPv-wT-FnU"/>
+                                                <constraint firstAttribute="width" constant="90" id="xil-cz-xzL"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cash on delivery" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5bp-Pg-ktx">
+                                            <rect key="frame" x="115" y="34" width="134" height="22"/>
+                                            <fontDescription key="fontDescription" name="MarkPro-Light" family="Mark Pro" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow" translatesAutoresizingMaskIntoConstraints="NO" id="qSa-nS-DAT">
+                                            <rect key="frame" x="314" y="32.5" width="30" height="25"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="30" id="DoG-C0-rq2"/>
+                                                <constraint firstAttribute="height" constant="25" id="JIb-JN-xdM"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="5bp-Pg-ktx" firstAttribute="leading" secondItem="NhH-ag-Met" secondAttribute="trailing" constant="15" id="GEz-kT-Ggj"/>
+                                        <constraint firstItem="qSa-nS-DAT" firstAttribute="centerY" secondItem="4EW-Fs-MXQ" secondAttribute="centerY" id="WZk-Ez-qMB"/>
+                                        <constraint firstItem="5bp-Pg-ktx" firstAttribute="centerY" secondItem="NhH-ag-Met" secondAttribute="centerY" id="aQ5-BQ-WrK"/>
+                                        <constraint firstAttribute="trailing" secondItem="qSa-nS-DAT" secondAttribute="trailing" constant="30" id="cVF-S8-acz"/>
+                                        <constraint firstItem="NhH-ag-Met" firstAttribute="centerY" secondItem="4EW-Fs-MXQ" secondAttribute="centerY" id="dRl-IA-9F7"/>
+                                        <constraint firstItem="NhH-ag-Met" firstAttribute="leading" secondItem="4EW-Fs-MXQ" secondAttribute="leading" constant="10" id="fIZ-0t-8YC"/>
+                                        <constraint firstAttribute="height" constant="90" id="yUz-bQ-YyI"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="12"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                            <real key="value" value="3"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                            <size key="value" width="-7" height="4"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                            <color key="value" red="0.04789039481" green="0.04789039481" blue="0.04789039481" alpha="0.029999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7HP-zo-kLt" customClass="HMView" customModule="HomeMedics" customModuleProvider="target">
+                                    <rect key="frame" x="20" y="240" width="374" height="90"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jazz-cash" translatesAutoresizingMaskIntoConstraints="NO" id="WWK-nl-zpT">
+                                            <rect key="frame" x="10" y="20" width="90" height="50"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="90" id="flu-Nu-iCT"/>
+                                                <constraint firstAttribute="height" constant="50" id="thP-uP-I6O"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Credit/Debit Card" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WLg-YI-VIr">
+                                            <rect key="frame" x="115" y="34" width="151" height="22"/>
+                                            <fontDescription key="fontDescription" name="MarkPro-Light" family="Mark Pro" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow" translatesAutoresizingMaskIntoConstraints="NO" id="drV-e7-G9R">
+                                            <rect key="frame" x="314" y="32.5" width="30" height="25"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="25" id="5iq-yA-3Rp"/>
+                                                <constraint firstAttribute="width" constant="30" id="nhh-Qa-H8I"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="90" id="He4-Vg-jd9"/>
+                                        <constraint firstItem="drV-e7-G9R" firstAttribute="centerY" secondItem="7HP-zo-kLt" secondAttribute="centerY" id="KAb-1z-cse"/>
+                                        <constraint firstItem="WWK-nl-zpT" firstAttribute="leading" secondItem="7HP-zo-kLt" secondAttribute="leading" constant="10" id="Tyz-Lc-BoT"/>
+                                        <constraint firstItem="WLg-YI-VIr" firstAttribute="leading" secondItem="WWK-nl-zpT" secondAttribute="trailing" constant="15" id="U9j-z2-1mA"/>
+                                        <constraint firstItem="WLg-YI-VIr" firstAttribute="centerY" secondItem="WWK-nl-zpT" secondAttribute="centerY" id="dFt-H8-yjC"/>
+                                        <constraint firstItem="WWK-nl-zpT" firstAttribute="centerY" secondItem="7HP-zo-kLt" secondAttribute="centerY" id="oaO-5R-nSY"/>
+                                        <constraint firstAttribute="trailing" secondItem="drV-e7-G9R" secondAttribute="trailing" constant="30" id="tug-Ok-dh1"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="12"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                            <real key="value" value="3"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                            <size key="value" width="-7" height="4"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                            <color key="value" red="0.04789039481" green="0.04789039481" blue="0.04789039481" alpha="0.029999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="whV-Mr-kta" customClass="HMView" customModule="HomeMedics" customModuleProvider="target">
+                                    <rect key="frame" x="20" y="350" width="374" height="90"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="epaisa" translatesAutoresizingMaskIntoConstraints="NO" id="LhX-MB-hrB">
+                                            <rect key="frame" x="10" y="20" width="90" height="50"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="90" id="3Wc-lr-0TL"/>
+                                                <constraint firstAttribute="height" constant="50" id="soo-uj-PlT"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Credit/Debit Card" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uNe-JY-XEy">
+                                            <rect key="frame" x="115" y="34" width="151" height="22"/>
+                                            <fontDescription key="fontDescription" name="MarkPro-Light" family="Mark Pro" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow" translatesAutoresizingMaskIntoConstraints="NO" id="US7-yi-AQG">
+                                            <rect key="frame" x="314" y="32.5" width="30" height="25"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="25" id="beV-5u-kG8"/>
+                                                <constraint firstAttribute="width" constant="30" id="gXV-La-Rtx"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="uNe-JY-XEy" firstAttribute="centerY" secondItem="LhX-MB-hrB" secondAttribute="centerY" id="EQu-Sd-dYK"/>
+                                        <constraint firstItem="LhX-MB-hrB" firstAttribute="centerY" secondItem="whV-Mr-kta" secondAttribute="centerY" id="FHa-UG-R4L"/>
+                                        <constraint firstItem="LhX-MB-hrB" firstAttribute="leading" secondItem="whV-Mr-kta" secondAttribute="leading" constant="10" id="H2W-5Y-PY3"/>
+                                        <constraint firstAttribute="trailing" secondItem="US7-yi-AQG" secondAttribute="trailing" constant="30" id="HTQ-5R-v8v"/>
+                                        <constraint firstAttribute="height" constant="90" id="aWt-PP-A1x"/>
+                                        <constraint firstItem="uNe-JY-XEy" firstAttribute="leading" secondItem="LhX-MB-hrB" secondAttribute="trailing" constant="15" id="hXB-uQ-SDy"/>
+                                        <constraint firstItem="US7-yi-AQG" firstAttribute="centerY" secondItem="whV-Mr-kta" secondAttribute="centerY" id="uX8-fb-RgX"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="12"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                            <real key="value" value="3"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                            <size key="value" width="-7" height="4"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                            <color key="value" red="0.04789039481" green="0.04789039481" blue="0.04789039481" alpha="0.029999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Any Master or Visa Card is accepted" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KV9-8M-2eQ">
+                                    <rect key="frame" x="20" y="570" width="374" height="22"/>
+                                    <fontDescription key="fontDescription" name="MarkPro-Bold" family="Mark Pro" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="0.80513143539428711" green="0.88909977674484253" blue="0.96831423044204712" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="4EW-Fs-MXQ" secondAttribute="bottom" constant="140" id="1UT-Oy-6mT"/>
+                                <constraint firstItem="L0q-cN-QU1" firstAttribute="top" secondItem="Bqz-IN-6aa" secondAttribute="bottom" constant="20" id="3uK-AP-Ptk"/>
+                                <constraint firstItem="7HP-zo-kLt" firstAttribute="trailing" secondItem="L0q-cN-QU1" secondAttribute="trailing" id="4RA-S5-1Je"/>
+                                <constraint firstItem="L0q-cN-QU1" firstAttribute="trailing" secondItem="Bqz-IN-6aa" secondAttribute="trailing" id="8xh-4q-MsB"/>
+                                <constraint firstItem="KV9-8M-2eQ" firstAttribute="trailing" secondItem="4EW-Fs-MXQ" secondAttribute="trailing" id="FQT-DW-Uul"/>
+                                <constraint firstItem="KV9-8M-2eQ" firstAttribute="top" secondItem="4EW-Fs-MXQ" secondAttribute="bottom" constant="20" id="H6l-YP-QgN"/>
+                                <constraint firstItem="7HP-zo-kLt" firstAttribute="top" secondItem="L0q-cN-QU1" secondAttribute="bottom" constant="20" id="Jyg-5L-cj2"/>
+                                <constraint firstAttribute="height" constant="690" id="MSd-Xu-vPU"/>
+                                <constraint firstItem="whV-Mr-kta" firstAttribute="trailing" secondItem="7HP-zo-kLt" secondAttribute="trailing" id="Mzq-hx-haX"/>
+                                <constraint firstItem="whV-Mr-kta" firstAttribute="leading" secondItem="7HP-zo-kLt" secondAttribute="leading" id="PBa-Rc-QZk"/>
+                                <constraint firstItem="whV-Mr-kta" firstAttribute="top" secondItem="7HP-zo-kLt" secondAttribute="bottom" constant="20" id="Qii-Nv-NAJ"/>
+                                <constraint firstItem="Bqz-IN-6aa" firstAttribute="top" secondItem="eqh-8e-BFw" secondAttribute="top" constant="20" id="RAX-KW-fzm"/>
+                                <constraint firstItem="4EW-Fs-MXQ" firstAttribute="leading" secondItem="Bqz-IN-6aa" secondAttribute="leading" id="cqO-XY-r7C"/>
+                                <constraint firstItem="KV9-8M-2eQ" firstAttribute="leading" secondItem="4EW-Fs-MXQ" secondAttribute="leading" id="oCY-7k-y3E"/>
+                                <constraint firstItem="4EW-Fs-MXQ" firstAttribute="trailing" secondItem="Bqz-IN-6aa" secondAttribute="trailing" id="pAc-ay-jwb"/>
+                                <constraint firstItem="7HP-zo-kLt" firstAttribute="leading" secondItem="L0q-cN-QU1" secondAttribute="leading" id="wPi-Md-TUv"/>
+                                <constraint firstAttribute="trailing" secondItem="Bqz-IN-6aa" secondAttribute="trailing" constant="20" id="wua-Io-UBV"/>
+                                <constraint firstItem="Bqz-IN-6aa" firstAttribute="leading" secondItem="eqh-8e-BFw" secondAttribute="leading" constant="20" id="zQk-eG-XoS"/>
+                                <constraint firstItem="L0q-cN-QU1" firstAttribute="leading" secondItem="Bqz-IN-6aa" secondAttribute="leading" id="zw7-Sg-EG4"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.80513143539999998" green="0.88909977669999996" blue="0.96831423039999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="eqh-8e-BFw" firstAttribute="leading" secondItem="rWH-d7-Tb8" secondAttribute="leading" id="Rrv-4q-saa"/>
+                        <constraint firstAttribute="bottom" secondItem="eqh-8e-BFw" secondAttribute="bottom" id="V9r-Hn-1SA"/>
+                        <constraint firstItem="eqh-8e-BFw" firstAttribute="width" secondItem="rWH-d7-Tb8" secondAttribute="width" id="cCp-wt-alY"/>
+                        <constraint firstAttribute="trailing" secondItem="eqh-8e-BFw" secondAttribute="trailing" id="mcg-A0-j1S"/>
+                        <constraint firstItem="eqh-8e-BFw" firstAttribute="top" secondItem="rWH-d7-Tb8" secondAttribute="top" id="vOC-Yz-mZr"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="rWH-d7-Tb8" secondAttribute="bottom" id="2z5-gn-Vu5"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="oTQ-Zs-axy" secondAttribute="trailing" id="ElI-lQ-h2X"/>
+                <constraint firstItem="rWH-d7-Tb8" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="N9r-lR-XjN"/>
+                <constraint firstItem="oTQ-Zs-axy" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="V1E-wx-gn7"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="rWH-d7-Tb8" secondAttribute="trailing" id="h8E-Fg-NRI"/>
+                <constraint firstItem="rWH-d7-Tb8" firstAttribute="top" secondItem="oTQ-Zs-axy" secondAttribute="bottom" id="u9F-Nx-bfH"/>
+                <constraint firstItem="oTQ-Zs-axy" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="vVF-5c-vZn"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="51" y="81"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Cash_on_delivery-512" width="170.5" height="170.5"/>
+        <image name="arrow" width="21" height="13"/>
+        <image name="billing-color" width="62.5" height="63"/>
+        <image name="epaisa" width="350" height="180"/>
+        <image name="jazz-cash" width="99" height="37"/>
+        <image name="payment-color" width="62.5" height="63"/>
+        <image name="shipping-color" width="62.5" height="63"/>
+    </resources>
+</document>

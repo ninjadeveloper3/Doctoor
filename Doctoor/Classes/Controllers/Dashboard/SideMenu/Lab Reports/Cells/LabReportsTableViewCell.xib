@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="FontFont_FF.Mark.Pro.Bold.otf">
+            <string>MarkPro-Bold</string>
+        </array>
+        <array key="FontFont_FF.Mark.Pro.otf">
+            <string>MarkPro</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="106" id="KGk-i7-Jjw" customClass="LabReportsTableViewCell" customModule="HomeMedics" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="380" height="106"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="380" height="105.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wZg-w3-hjn" customClass="HMView" customModule="HomeMedics" customModuleProvider="target">
+                        <rect key="frame" x="8" y="0.0" width="364" height="95"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="download" translatesAutoresizingMaskIntoConstraints="NO" id="xX1-2n-Ecd">
+                                <rect key="frame" x="301" y="30" width="35" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="EwY-Vd-ugW"/>
+                                    <constraint firstAttribute="width" constant="35" id="bEb-FU-hNm"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="blood glucose random" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qj8-dJ-weC">
+                                <rect key="frame" x="20" y="15" width="271" height="19.5"/>
+                                <fontDescription key="fontDescription" name="MarkPro-Bold" family="Mark Pro" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="Its simply dummy text for printing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1LQ-jl-WX7">
+                                <rect key="frame" x="20" y="37.5" width="271" height="15.5"/>
+                                <fontDescription key="fontDescription" name="MarkPro" family="Mark Pro" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="date" translatesAutoresizingMaskIntoConstraints="NO" id="ukQ-a6-DEs">
+                                <rect key="frame" x="20" y="54" width="18" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="18" id="4Su-AZ-G9X"/>
+                                    <constraint firstAttribute="height" constant="34" id="Sca-CX-pRH"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="22 jan 2019" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EZm-Uy-KSJ">
+                                <rect key="frame" x="46" y="63.5" width="64.5" height="15.5"/>
+                                <fontDescription key="fontDescription" name="MarkPro" family="Mark Pro" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="time" translatesAutoresizingMaskIntoConstraints="NO" id="1j2-YF-YmW">
+                                <rect key="frame" x="118.5" y="62" width="18" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="18" id="Reu-2E-W68"/>
+                                    <constraint firstAttribute="width" constant="18" id="gWa-HQ-mpG"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E5g-YV-aw1">
+                                <rect key="frame" x="144.5" y="63.5" width="32" height="15.5"/>
+                                <fontDescription key="fontDescription" name="MarkPro" family="Mark Pro" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="1LQ-jl-WX7" firstAttribute="top" secondItem="Qj8-dJ-weC" secondAttribute="bottom" constant="3" id="3Rn-Oe-d70"/>
+                            <constraint firstItem="Qj8-dJ-weC" firstAttribute="leading" secondItem="wZg-w3-hjn" secondAttribute="leading" constant="20" id="4jC-wV-K9J"/>
+                            <constraint firstItem="1j2-YF-YmW" firstAttribute="centerY" secondItem="ukQ-a6-DEs" secondAttribute="centerY" id="6qc-ZI-bz5"/>
+                            <constraint firstItem="xX1-2n-Ecd" firstAttribute="leading" secondItem="Qj8-dJ-weC" secondAttribute="trailing" constant="10" id="E8m-lK-0da"/>
+                            <constraint firstItem="1j2-YF-YmW" firstAttribute="leading" secondItem="EZm-Uy-KSJ" secondAttribute="trailing" constant="8" id="GLf-LT-wPy"/>
+                            <constraint firstAttribute="height" constant="95" id="OA8-vp-tVr"/>
+                            <constraint firstItem="E5g-YV-aw1" firstAttribute="leading" secondItem="1j2-YF-YmW" secondAttribute="trailing" constant="8" id="TFD-gm-txp"/>
+                            <constraint firstItem="E5g-YV-aw1" firstAttribute="centerY" secondItem="ukQ-a6-DEs" secondAttribute="centerY" id="Uyp-sZ-tch"/>
+                            <constraint firstItem="1LQ-jl-WX7" firstAttribute="trailing" secondItem="Qj8-dJ-weC" secondAttribute="trailing" id="ZfR-K6-dPf"/>
+                            <constraint firstAttribute="trailing" secondItem="xX1-2n-Ecd" secondAttribute="trailing" constant="28" id="dDJ-NW-fCf"/>
+                            <constraint firstItem="Qj8-dJ-weC" firstAttribute="top" secondItem="wZg-w3-hjn" secondAttribute="top" constant="15" id="g8Y-9r-Vfa"/>
+                            <constraint firstItem="ukQ-a6-DEs" firstAttribute="top" secondItem="1LQ-jl-WX7" secondAttribute="bottom" constant="1" id="hV3-rN-QjO"/>
+                            <constraint firstItem="EZm-Uy-KSJ" firstAttribute="leading" secondItem="ukQ-a6-DEs" secondAttribute="trailing" constant="8" id="kp4-kl-lgJ"/>
+                            <constraint firstAttribute="bottom" secondItem="ukQ-a6-DEs" secondAttribute="bottom" constant="7" id="qBO-zM-c2g"/>
+                            <constraint firstItem="ukQ-a6-DEs" firstAttribute="leading" secondItem="wZg-w3-hjn" secondAttribute="leading" constant="20" id="unu-3X-J1l"/>
+                            <constraint firstItem="EZm-Uy-KSJ" firstAttribute="centerY" secondItem="ukQ-a6-DEs" secondAttribute="centerY" id="ws9-9I-Vao"/>
+                            <constraint firstItem="xX1-2n-Ecd" firstAttribute="centerY" secondItem="wZg-w3-hjn" secondAttribute="centerY" id="x01-HR-GOv"/>
+                            <constraint firstItem="1LQ-jl-WX7" firstAttribute="leading" secondItem="Qj8-dJ-weC" secondAttribute="leading" id="zT9-QR-S8f"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                <size key="value" width="-7" height="4"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                <color key="value" red="0.04789039481" green="0.04789039481" blue="0.04789039481" alpha="0.029999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="wZg-w3-hjn" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="HSe-j7-pCm"/>
+                    <constraint firstItem="wZg-w3-hjn" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="cWl-jf-xzT"/>
+                    <constraint firstAttribute="bottom" secondItem="wZg-w3-hjn" secondAttribute="bottom" constant="10.5" id="rrj-9c-kbA"/>
+                    <constraint firstAttribute="trailing" secondItem="wZg-w3-hjn" secondAttribute="trailing" constant="8" id="uNC-eR-5mU"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="date" destination="EZm-Uy-KSJ" id="mh4-h1-wNj"/>
+                <outlet property="downloadAction" destination="xX1-2n-Ecd" id="s15-bT-3gg"/>
+                <outlet property="subTitle" destination="1LQ-jl-WX7" id="6lQ-ue-seq"/>
+                <outlet property="time" destination="E5g-YV-aw1" id="z8w-Hc-3PT"/>
+                <outlet property="title" destination="Qj8-dJ-weC" id="KLz-zI-GOA"/>
+            </connections>
+            <point key="canvasLocation" x="175.36231884057972" y="115.17857142857142"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="date" width="30" height="30"/>
+        <image name="download" width="37.5" height="37.5"/>
+        <image name="time" width="11" height="11"/>
+    </resources>
+</document>

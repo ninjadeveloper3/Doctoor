@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="FontFont_FF.Mark.Pro.Bold.otf">
+            <string>MarkPro-Bold</string>
+        </array>
+        <array key="FontFont_FF.Mark.Pro.otf">
+            <string>MarkPro</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProfileViewController" customModule="HomeMedics" customModuleProvider="target">
+            <connections>
+                <outlet property="editIcon" destination="2pP-qL-vM7" id="jjc-ZJ-HvL"/>
+                <outlet property="email" destination="FNU-20-Y84" id="4Q6-qz-OCz"/>
+                <outlet property="fName" destination="JgT-Ii-CZz" id="0uk-db-PQu"/>
+                <outlet property="gender" destination="KYq-LQ-xdE" id="qFO-G3-PS7"/>
+                <outlet property="headerUserName" destination="mFj-tR-hVQ" id="uDi-NK-snl"/>
+                <outlet property="number" destination="lF8-SN-IVC" id="6Op-kG-7dN"/>
+                <outlet property="profileBtn" destination="MlY-7F-dCu" id="IIV-rC-V2H"/>
+                <outlet property="profileImageView" destination="L60-Kh-8LX" id="1II-Uc-lJL"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KBl-DA-NTY">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="BnS-PB-FGM">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lJC-5m-h0T">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="204.5"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="3e5-Z5-F0A">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="204.5"/>
+                                        </imageView>
+                                        <imageView clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg-image" translatesAutoresizingMaskIntoConstraints="NO" id="L60-Kh-8LX">
+                                            <rect key="frame" x="157" y="37.5" width="100" height="100"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="100" id="Msl-tG-cmV"/>
+                                                <constraint firstAttribute="width" constant="100" id="h69-nT-gbg"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mFj-tR-hVQ">
+                                            <rect key="frame" x="207" y="145.5" width="0.0" height="0.0"/>
+                                            <fontDescription key="fontDescription" name="MarkPro-Bold" family="Mark Pro" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="edit" translatesAutoresizingMaskIntoConstraints="NO" id="2pP-qL-vM7">
+                                            <rect key="frame" x="243" y="105" width="15" height="15"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="15" id="VRF-B9-Dd5"/>
+                                                <constraint firstAttribute="height" constant="15" id="qwo-9f-cn5"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="3e5-Z5-F0A" firstAttribute="leading" secondItem="lJC-5m-h0T" secondAttribute="leading" id="3Io-wT-C53"/>
+                                        <constraint firstItem="L60-Kh-8LX" firstAttribute="centerX" secondItem="lJC-5m-h0T" secondAttribute="centerX" id="QOz-f0-V0G"/>
+                                        <constraint firstItem="L60-Kh-8LX" firstAttribute="centerY" secondItem="lJC-5m-h0T" secondAttribute="centerY" constant="-15" id="VNM-Sx-xMi"/>
+                                        <constraint firstItem="3e5-Z5-F0A" firstAttribute="top" secondItem="lJC-5m-h0T" secondAttribute="top" id="Ywh-pZ-Bre"/>
+                                        <constraint firstAttribute="trailing" secondItem="3e5-Z5-F0A" secondAttribute="trailing" id="YxX-Hw-KRP"/>
+                                        <constraint firstItem="mFj-tR-hVQ" firstAttribute="centerX" secondItem="lJC-5m-h0T" secondAttribute="centerX" id="ZnH-Qe-TBD"/>
+                                        <constraint firstAttribute="bottom" secondItem="3e5-Z5-F0A" secondAttribute="bottom" id="nNd-zk-czd"/>
+                                        <constraint firstItem="mFj-tR-hVQ" firstAttribute="top" secondItem="L60-Kh-8LX" secondAttribute="bottom" constant="8" id="r6g-NA-Y8y"/>
+                                        <constraint firstItem="2pP-qL-vM7" firstAttribute="leading" secondItem="L60-Kh-8LX" secondAttribute="trailing" constant="-14" id="w4S-Ff-vPn"/>
+                                        <constraint firstItem="2pP-qL-vM7" firstAttribute="centerY" secondItem="L60-Kh-8LX" secondAttribute="centerY" constant="25" id="xdq-2f-PxA"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kfZ-nG-3JG">
+                                    <rect key="frame" x="0.0" y="204.5" width="414" height="613.5"/>
+                                    <subviews>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Full Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JgT-Ii-CZz" customClass="MBUITextField" customModule="HomeMedics" customModuleProvider="target">
+                                            <rect key="frame" x="30" y="50" width="354" height="40"/>
+                                            <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="40" id="VtZ-HX-TRE"/>
+                                            </constraints>
+                                            <nil key="textColor"/>
+                                            <fontDescription key="fontDescription" name="MarkPro" family="Mark Pro" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                                    <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                    <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
+                                                    <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="selectedTitleColor">
+                                                    <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="maxLength">
+                                                    <integer key="value" value="20"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
+                                                    <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="selectedLineColor">
+                                                    <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="lineHeight">
+                                                    <real key="value" value="0.5"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="selectedLineHeight">
+                                                    <real key="value" value="0.5"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </textField>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Gender" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KYq-LQ-xdE" customClass="MBUITextField" customModule="HomeMedics" customModuleProvider="target">
+                                            <rect key="frame" x="30" y="120" width="354" height="40"/>
+                                            <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="40" id="z4q-s0-XcC"/>
+                                            </constraints>
+                                            <nil key="textColor"/>
+                                            <fontDescription key="fontDescription" name="MarkPro" family="Mark Pro" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                                    <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                    <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
+                                                    <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="selectedTitleColor">
+                                                    <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="maxLength">
+                                                    <integer key="value" value="20"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
+                                                    <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="selectedLineColor">
+                                                    <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="lineHeight">
+                                                    <real key="value" value="0.5"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="selectedLineHeight">
+                                                    <real key="value" value="0.5"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </textField>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MlY-7F-dCu" customClass="MBButton" customModule="HomeMedics" customModuleProvider="target">
+                                            <rect key="frame" x="60" y="358" width="294" height="60"/>
+                                            <color key="backgroundColor" red="0.2632602751" green="0.18259903790000001" blue="0.46162676809999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="60" id="0mG-vY-0WJ"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="MarkPro-Bold" family="Mark Pro" pointSize="17"/>
+                                            <state key="normal" title="Edit Profile">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="0.0"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="editProfileTapped:" destination="-1" eventType="touchUpInside" id="cyR-31-lPh"/>
+                                            </connections>
+                                        </button>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Mobile No." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lF8-SN-IVC" customClass="MBUITextField" customModule="HomeMedics" customModuleProvider="target">
+                                            <rect key="frame" x="30" y="190" width="354" height="40"/>
+                                            <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="40" id="agc-31-oMw"/>
+                                            </constraints>
+                                            <nil key="textColor"/>
+                                            <fontDescription key="fontDescription" name="MarkPro" family="Mark Pro" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                                    <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                    <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
+                                                    <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="selectedTitleColor">
+                                                    <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="maxLength">
+                                                    <integer key="value" value="20"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
+                                                    <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="selectedLineColor">
+                                                    <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="lineHeight">
+                                                    <real key="value" value="0.5"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="selectedLineHeight">
+                                                    <real key="value" value="0.5"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </textField>
+                                        <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Email address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FNU-20-Y84" customClass="MBUITextField" customModule="HomeMedics" customModuleProvider="target">
+                                            <rect key="frame" x="30" y="260" width="354" height="40"/>
+                                            <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="40" id="WDb-Kb-8rb"/>
+                                            </constraints>
+                                            <nil key="textColor"/>
+                                            <fontDescription key="fontDescription" name="MarkPro" family="Mark Pro" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                                    <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                    <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
+                                                    <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="selectedTitleColor">
+                                                    <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="maxLength">
+                                                    <integer key="value" value="20"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
+                                                    <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="selectedLineColor">
+                                                    <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="lineHeight">
+                                                    <real key="value" value="0.5"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="selectedLineHeight">
+                                                    <real key="value" value="0.5"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </textField>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="lF8-SN-IVC" firstAttribute="top" secondItem="KYq-LQ-xdE" secondAttribute="bottom" constant="30" id="4fu-gB-B7W"/>
+                                        <constraint firstAttribute="trailing" secondItem="JgT-Ii-CZz" secondAttribute="trailing" constant="30" id="J2Q-Fb-Y4w"/>
+                                        <constraint firstItem="lF8-SN-IVC" firstAttribute="leading" secondItem="JgT-Ii-CZz" secondAttribute="leading" id="QqU-HT-SMf"/>
+                                        <constraint firstAttribute="bottom" secondItem="MlY-7F-dCu" secondAttribute="bottom" constant="195.5" id="VuQ-gW-gnB"/>
+                                        <constraint firstItem="JgT-Ii-CZz" firstAttribute="top" secondItem="kfZ-nG-3JG" secondAttribute="top" constant="50" id="Xo5-mH-PB1"/>
+                                        <constraint firstItem="KYq-LQ-xdE" firstAttribute="top" secondItem="JgT-Ii-CZz" secondAttribute="bottom" constant="30" id="Zci-7v-a3m"/>
+                                        <constraint firstItem="MlY-7F-dCu" firstAttribute="trailing" secondItem="JgT-Ii-CZz" secondAttribute="trailing" constant="-30" id="Zwo-Mk-Lc4"/>
+                                        <constraint firstItem="lF8-SN-IVC" firstAttribute="trailing" secondItem="JgT-Ii-CZz" secondAttribute="trailing" id="cR0-o0-i2B"/>
+                                        <constraint firstItem="MlY-7F-dCu" firstAttribute="top" secondItem="FNU-20-Y84" secondAttribute="bottom" constant="58" id="cgE-Kq-9ve"/>
+                                        <constraint firstItem="FNU-20-Y84" firstAttribute="trailing" secondItem="JgT-Ii-CZz" secondAttribute="trailing" id="e1x-bF-enz"/>
+                                        <constraint firstItem="KYq-LQ-xdE" firstAttribute="leading" secondItem="JgT-Ii-CZz" secondAttribute="leading" id="gs8-7Z-s8L"/>
+                                        <constraint firstItem="MlY-7F-dCu" firstAttribute="leading" secondItem="JgT-Ii-CZz" secondAttribute="leading" constant="30" id="iHY-oX-A0C"/>
+                                        <constraint firstItem="FNU-20-Y84" firstAttribute="leading" secondItem="JgT-Ii-CZz" secondAttribute="leading" id="j1s-52-x8c"/>
+                                        <constraint firstItem="KYq-LQ-xdE" firstAttribute="trailing" secondItem="JgT-Ii-CZz" secondAttribute="trailing" id="jBm-Km-ydH"/>
+                                        <constraint firstItem="JgT-Ii-CZz" firstAttribute="leading" secondItem="kfZ-nG-3JG" secondAttribute="leading" constant="30" id="q4d-t4-7RO"/>
+                                        <constraint firstItem="FNU-20-Y84" firstAttribute="top" secondItem="lF8-SN-IVC" secondAttribute="bottom" constant="30" id="vOF-Kv-fxl"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="kfZ-nG-3JG" firstAttribute="height" secondItem="lJC-5m-h0T" secondAttribute="height" multiplier="3" id="aES-xz-8lp"/>
+                                <constraint firstAttribute="height" constant="818" id="hT3-7y-55k"/>
+                                <constraint firstItem="kfZ-nG-3JG" firstAttribute="width" secondItem="lJC-5m-h0T" secondAttribute="width" id="vCW-0i-Wdw"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="BnS-PB-FGM" firstAttribute="leading" secondItem="KBl-DA-NTY" secondAttribute="leading" id="0XE-6Y-iiP"/>
+                        <constraint firstItem="BnS-PB-FGM" firstAttribute="width" secondItem="KBl-DA-NTY" secondAttribute="width" id="GE7-eT-UCm"/>
+                        <constraint firstItem="BnS-PB-FGM" firstAttribute="top" secondItem="KBl-DA-NTY" secondAttribute="top" id="GOh-Fw-sS0"/>
+                        <constraint firstAttribute="bottom" secondItem="BnS-PB-FGM" secondAttribute="bottom" id="VLt-Eq-dMX"/>
+                        <constraint firstAttribute="trailing" secondItem="BnS-PB-FGM" secondAttribute="trailing" id="sGg-Dg-N0O"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="KBl-DA-NTY" secondAttribute="bottom" id="7d8-is-e6b"/>
+                <constraint firstItem="KBl-DA-NTY" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="AZn-EG-55S"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="KBl-DA-NTY" secondAttribute="trailing" id="WKv-b4-pY1"/>
+                <constraint firstItem="KBl-DA-NTY" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="uiU-cN-yT1"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="47.826086956521742" y="35.491071428571423"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bg" width="310" height="156"/>
+        <image name="bg-image" width="1079" height="1093"/>
+        <image name="edit" width="11.5" height="11.5"/>
+    </resources>
+</document>

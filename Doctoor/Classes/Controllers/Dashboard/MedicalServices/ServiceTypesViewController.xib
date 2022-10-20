@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="FontFont_FF.Mark.Pro.Bold.otf">
+            <string>MarkPro-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ServiceTypesViewController" customModule="HomeMedics" customModuleProvider="target">
+            <connections>
+                <outlet property="equipmentPurchaseView" destination="as3-CK-rPm" id="mLC-lH-Ztx"/>
+                <outlet property="equipmentVIew" destination="Vdz-4R-zFp" id="MPE-kO-wKK"/>
+                <outlet property="serviceView" destination="E6f-MG-lyN" id="42k-Kh-jch"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="832"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GfI-2x-xJW">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="832"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="6x6-c7-u5z">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="832"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E6f-MG-lyN" customClass="HMView" customModule="HomeMedics" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="277.5"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H5t-Kt-eKH" customClass="HMView" customModule="HomeMedics" customModuleProvider="target">
+                                            <rect key="frame" x="137.5" y="25" width="100" height="100"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_medics_services" translatesAutoresizingMaskIntoConstraints="NO" id="aGB-go-h8c">
+                                                    <rect key="frame" x="20" y="20" width="60" height="60"/>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="aGB-go-h8c" firstAttribute="leading" secondItem="H5t-Kt-eKH" secondAttribute="leading" constant="20" id="AhI-RB-cJn"/>
+                                                <constraint firstAttribute="height" constant="100" id="Jgi-dI-hQx"/>
+                                                <constraint firstAttribute="width" constant="100" id="j5B-kP-T7u"/>
+                                                <constraint firstAttribute="trailing" secondItem="aGB-go-h8c" secondAttribute="trailing" constant="20" id="n74-Fv-YgY"/>
+                                                <constraint firstAttribute="bottom" secondItem="aGB-go-h8c" secondAttribute="bottom" constant="20" id="no7-W5-h52"/>
+                                                <constraint firstItem="aGB-go-h8c" firstAttribute="top" secondItem="H5t-Kt-eKH" secondAttribute="top" constant="20" id="rik-cL-C9F"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="50"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                    <real key="value" value="0.5"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                    <color key="value" red="0.04789039481" green="0.04789039481" blue="0.04789039481" alpha="0.41857394368028172" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home Medical Services" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dF0-Fj-woX">
+                                            <rect key="frame" x="76" y="150" width="223.5" height="25.5"/>
+                                            <fontDescription key="fontDescription" name="MarkPro-Bold" family="Mark Pro" pointSize="20"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Service Provider" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cZa-SK-esD">
+                                            <rect key="frame" x="120.5" y="190.5" width="134" height="22"/>
+                                            <fontDescription key="fontDescription" name="MarkPro-Bold" family="Mark Pro" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow" translatesAutoresizingMaskIntoConstraints="NO" id="pFr-HD-wsm">
+                                            <rect key="frame" x="177" y="232.5" width="21" height="13"/>
+                                        </imageView>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gXO-k0-NqA">
+                                            <rect key="frame" x="20" y="277" width="335" height="0.5"/>
+                                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="0.5" id="qXz-2b-w9j"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="dF0-Fj-woX" firstAttribute="centerX" secondItem="E6f-MG-lyN" secondAttribute="centerX" id="22r-0M-oSB"/>
+                                        <constraint firstItem="cZa-SK-esD" firstAttribute="centerX" secondItem="E6f-MG-lyN" secondAttribute="centerX" id="3A1-dK-Uaq"/>
+                                        <constraint firstItem="dF0-Fj-woX" firstAttribute="top" secondItem="H5t-Kt-eKH" secondAttribute="bottom" constant="25" id="8Xv-W1-kfJ"/>
+                                        <constraint firstAttribute="bottom" secondItem="gXO-k0-NqA" secondAttribute="bottom" id="G3t-2a-t4L"/>
+                                        <constraint firstItem="H5t-Kt-eKH" firstAttribute="top" secondItem="E6f-MG-lyN" secondAttribute="top" constant="25" id="Qx5-W6-CSu"/>
+                                        <constraint firstItem="cZa-SK-esD" firstAttribute="top" secondItem="dF0-Fj-woX" secondAttribute="bottom" constant="15" id="VYa-aD-T7n"/>
+                                        <constraint firstAttribute="trailing" secondItem="gXO-k0-NqA" secondAttribute="trailing" constant="20" id="akR-UK-PRO"/>
+                                        <constraint firstItem="pFr-HD-wsm" firstAttribute="top" secondItem="cZa-SK-esD" secondAttribute="bottom" constant="20" id="btr-K0-rg6"/>
+                                        <constraint firstItem="gXO-k0-NqA" firstAttribute="leading" secondItem="E6f-MG-lyN" secondAttribute="leading" constant="20" id="hYj-zM-y6l"/>
+                                        <constraint firstItem="H5t-Kt-eKH" firstAttribute="centerX" secondItem="E6f-MG-lyN" secondAttribute="centerX" id="j3t-OY-oGc"/>
+                                        <constraint firstItem="pFr-HD-wsm" firstAttribute="centerX" secondItem="E6f-MG-lyN" secondAttribute="centerX" id="tEz-TE-X3r"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                            <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="as3-CK-rPm" customClass="HMView" customModule="HomeMedics" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="277.5" width="375" height="277"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OyI-fZ-kNM" customClass="HMView" customModule="HomeMedics" customModuleProvider="target">
+                                            <rect key="frame" x="137.5" y="25" width="100" height="100"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_medics_services" translatesAutoresizingMaskIntoConstraints="NO" id="hhr-2G-ng5">
+                                                    <rect key="frame" x="20" y="20" width="60" height="60"/>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="100" id="8MU-6o-c3G"/>
+                                                <constraint firstAttribute="width" constant="100" id="VgK-T4-qGX"/>
+                                                <constraint firstAttribute="trailing" secondItem="hhr-2G-ng5" secondAttribute="trailing" constant="20" id="YLJ-WK-f18"/>
+                                                <constraint firstAttribute="bottom" secondItem="hhr-2G-ng5" secondAttribute="bottom" constant="20" id="bhj-XL-M82"/>
+                                                <constraint firstItem="hhr-2G-ng5" firstAttribute="top" secondItem="OyI-fZ-kNM" secondAttribute="top" constant="20" id="oyT-1y-xMC"/>
+                                                <constraint firstItem="hhr-2G-ng5" firstAttribute="leading" secondItem="OyI-fZ-kNM" secondAttribute="leading" constant="20" id="zrl-my-Edf"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="50"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                    <real key="value" value="0.5"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                    <color key="value" red="0.04789039481" green="0.04789039481" blue="0.04789039481" alpha="0.41857394370000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home Medical Services" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dWm-SB-GxH">
+                                            <rect key="frame" x="76" y="150" width="223.5" height="25.5"/>
+                                            <fontDescription key="fontDescription" name="MarkPro-Bold" family="Mark Pro" pointSize="20"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Medical Equipment Purchase" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mly-GW-61U">
+                                            <rect key="frame" x="69" y="190.5" width="237.5" height="22"/>
+                                            <fontDescription key="fontDescription" name="MarkPro-Bold" family="Mark Pro" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow" translatesAutoresizingMaskIntoConstraints="NO" id="ap9-dW-rhR">
+                                            <rect key="frame" x="177" y="232.5" width="21" height="13"/>
+                                        </imageView>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fTs-db-gDs">
+                                            <rect key="frame" x="20" y="276.5" width="335" height="0.5"/>
+                                            <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="0.5" id="4Ze-hP-33E"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="dWm-SB-GxH" firstAttribute="centerX" secondItem="as3-CK-rPm" secondAttribute="centerX" id="0qe-h2-SZF"/>
+                                        <constraint firstItem="ap9-dW-rhR" firstAttribute="top" secondItem="Mly-GW-61U" secondAttribute="bottom" constant="20" id="2v3-F7-Rbg"/>
+                                        <constraint firstAttribute="bottom" secondItem="fTs-db-gDs" secondAttribute="bottom" id="85N-My-Bx3"/>
+                                        <constraint firstItem="ap9-dW-rhR" firstAttribute="centerX" secondItem="as3-CK-rPm" secondAttribute="centerX" id="97h-hl-cyG"/>
+                                        <constraint firstItem="dWm-SB-GxH" firstAttribute="top" secondItem="OyI-fZ-kNM" secondAttribute="bottom" constant="25" id="PBW-pr-Hk7"/>
+                                        <constraint firstItem="Mly-GW-61U" firstAttribute="centerX" secondItem="as3-CK-rPm" secondAttribute="centerX" id="Xpe-uH-XbU"/>
+                                        <constraint firstItem="fTs-db-gDs" firstAttribute="leading" secondItem="as3-CK-rPm" secondAttribute="leading" constant="20" id="dkK-Nd-0KM"/>
+                                        <constraint firstAttribute="trailing" secondItem="fTs-db-gDs" secondAttribute="trailing" constant="20" id="gjg-4f-bHd"/>
+                                        <constraint firstItem="OyI-fZ-kNM" firstAttribute="top" secondItem="as3-CK-rPm" secondAttribute="top" constant="25" id="khM-TU-vHS"/>
+                                        <constraint firstItem="Mly-GW-61U" firstAttribute="top" secondItem="dWm-SB-GxH" secondAttribute="bottom" constant="15" id="uC1-Jm-bSX"/>
+                                        <constraint firstItem="OyI-fZ-kNM" firstAttribute="centerX" secondItem="as3-CK-rPm" secondAttribute="centerX" id="yLO-rF-w8D"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                            <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vdz-4R-zFp">
+                                    <rect key="frame" x="0.0" y="554.5" width="375" height="277.5"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r28-TO-7Ao" customClass="HMView" customModule="HomeMedics" customModuleProvider="target">
+                                            <rect key="frame" x="137.5" y="25" width="100" height="100"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="medical-equipment" translatesAutoresizingMaskIntoConstraints="NO" id="1bF-7E-BoU">
+                                                    <rect key="frame" x="20" y="20" width="60" height="60"/>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="1bF-7E-BoU" secondAttribute="trailing" constant="20" id="Jd5-vx-sTI"/>
+                                                <constraint firstAttribute="width" constant="100" id="Jvq-lI-0GZ"/>
+                                                <constraint firstAttribute="height" constant="100" id="LLe-bY-cMv"/>
+                                                <constraint firstItem="1bF-7E-BoU" firstAttribute="leading" secondItem="r28-TO-7Ao" secondAttribute="leading" constant="20" id="OTt-9x-Mw9"/>
+                                                <constraint firstItem="1bF-7E-BoU" firstAttribute="top" secondItem="r28-TO-7Ao" secondAttribute="top" constant="20" id="TO3-Je-ew1"/>
+                                                <constraint firstAttribute="bottom" secondItem="1bF-7E-BoU" secondAttribute="bottom" constant="20" id="pol-rs-AZX"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="50"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                    <real key="value" value="0.5"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                    <color key="value" red="0.04789039481" green="0.04789039481" blue="0.04789039481" alpha="0.41857394370000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home Medical Services" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jPZ-nQ-YAN">
+                                            <rect key="frame" x="76" y="150" width="223.5" height="25.5"/>
+                                            <fontDescription key="fontDescription" name="MarkPro-Bold" family="Mark Pro" pointSize="20"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow" translatesAutoresizingMaskIntoConstraints="NO" id="4PK-46-SrS">
+                                            <rect key="frame" x="177" y="232.5" width="21" height="13"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Medical Equipment Rental" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r7M-2O-tnH">
+                                            <rect key="frame" x="80" y="190.5" width="215.5" height="22"/>
+                                            <fontDescription key="fontDescription" name="MarkPro-Bold" family="Mark Pro" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="jPZ-nQ-YAN" firstAttribute="top" secondItem="r28-TO-7Ao" secondAttribute="bottom" constant="25" id="BRY-Cy-EPh"/>
+                                        <constraint firstItem="jPZ-nQ-YAN" firstAttribute="centerX" secondItem="Vdz-4R-zFp" secondAttribute="centerX" id="RTj-L4-c1g"/>
+                                        <constraint firstItem="r28-TO-7Ao" firstAttribute="centerX" secondItem="Vdz-4R-zFp" secondAttribute="centerX" id="Wkn-b2-aYe"/>
+                                        <constraint firstItem="r28-TO-7Ao" firstAttribute="top" secondItem="Vdz-4R-zFp" secondAttribute="top" constant="25" id="bTs-4s-6MP"/>
+                                        <constraint firstItem="r7M-2O-tnH" firstAttribute="centerX" secondItem="Vdz-4R-zFp" secondAttribute="centerX" id="ca5-m6-gED"/>
+                                        <constraint firstItem="4PK-46-SrS" firstAttribute="top" secondItem="r7M-2O-tnH" secondAttribute="bottom" constant="20" id="eWV-1g-V05"/>
+                                        <constraint firstItem="4PK-46-SrS" firstAttribute="centerX" secondItem="Vdz-4R-zFp" secondAttribute="centerX" id="ssh-Ea-w3e"/>
+                                        <constraint firstItem="r7M-2O-tnH" firstAttribute="top" secondItem="jPZ-nQ-YAN" secondAttribute="bottom" constant="15" id="y9E-MB-IDd"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="Vdz-4R-zFp" firstAttribute="height" secondItem="E6f-MG-lyN" secondAttribute="height" id="8Jd-oF-xxK"/>
+                                <constraint firstItem="E6f-MG-lyN" firstAttribute="width" secondItem="as3-CK-rPm" secondAttribute="width" id="BZf-jw-epc"/>
+                                <constraint firstItem="Vdz-4R-zFp" firstAttribute="width" secondItem="E6f-MG-lyN" secondAttribute="width" id="DN0-KQ-unA"/>
+                                <constraint firstItem="E6f-MG-lyN" firstAttribute="height" secondItem="as3-CK-rPm" secondAttribute="height" id="I5d-8B-5ag"/>
+                                <constraint firstAttribute="height" constant="832" id="ah5-qv-17a"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="6x6-c7-u5z" firstAttribute="width" secondItem="GfI-2x-xJW" secondAttribute="width" id="G86-Sh-PQ2"/>
+                        <constraint firstAttribute="trailing" secondItem="6x6-c7-u5z" secondAttribute="trailing" id="GiH-Re-XHN"/>
+                        <constraint firstAttribute="bottom" secondItem="6x6-c7-u5z" secondAttribute="bottom" id="N2c-Vy-cXg"/>
+                        <constraint firstItem="6x6-c7-u5z" firstAttribute="leading" secondItem="GfI-2x-xJW" secondAttribute="leading" id="aJK-QE-Amm"/>
+                        <constraint firstItem="6x6-c7-u5z" firstAttribute="top" secondItem="GfI-2x-xJW" secondAttribute="top" id="wcr-na-ztf"/>
+                    </constraints>
+                </scrollView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sia-ew-ifp" customClass="MBButton" customModule="HomeMedics" customModuleProvider="target">
+                    <rect key="frame" x="305" y="762" width="50" height="50"/>
+                    <color key="backgroundColor" red="0.2632602751" green="0.18259903790000001" blue="0.46162676809999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="0Rr-sp-KID"/>
+                        <constraint firstAttribute="height" constant="50" id="tKw-qR-p9E"/>
+                    </constraints>
+                    <state key="normal" image="help"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                            <color key="value" red="0.04789039481" green="0.04789039481" blue="0.04789039481" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                            <size key="value" width="-7" height="4"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="fabButtonTapped:" destination="-1" eventType="touchUpInside" id="V3F-0A-bdb"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="sia-ew-ifp" secondAttribute="bottom" constant="20" id="DV2-Zz-XL5"/>
+                <constraint firstItem="GfI-2x-xJW" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="M7C-oZ-pOl"/>
+                <constraint firstItem="GfI-2x-xJW" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="QWa-Da-koj"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="sia-ew-ifp" secondAttribute="trailing" constant="20" id="j84-li-tCU"/>
+                <constraint firstAttribute="bottom" secondItem="GfI-2x-xJW" secondAttribute="bottom" id="lFK-gy-wjb"/>
+                <constraint firstAttribute="trailing" secondItem="GfI-2x-xJW" secondAttribute="trailing" id="soU-ti-eLl"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="136.80000000000001" y="163.71814092953525"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="arrow" width="21" height="13"/>
+        <image name="help" width="35" height="35"/>
+        <image name="home_medics_services" width="100" height="100"/>
+        <image name="medical-equipment" width="44" height="43"/>
+    </resources>
+</document>

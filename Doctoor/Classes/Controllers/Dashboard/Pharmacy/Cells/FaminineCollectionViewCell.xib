@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="FontFont_FF.Mark.Pro.Bold.otf">
+            <string>MarkPro-Bold</string>
+        </array>
+        <array key="FontFont_FF.Mark.Pro.otf">
+            <string>MarkPro</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="FaminineCollectionViewCell" customModule="HomeMedics" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="151" height="200"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="151" height="200"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3nB-lx-uom" customClass="HMView" customModule="HomeMedics" customModuleProvider="target">
+                        <rect key="frame" x="5" y="5" width="141" height="190"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y9Y-yy-wFB" customClass="HMView" customModule="HomeMedics" customModuleProvider="target">
+                                <rect key="frame" x="33.5" y="16" width="74" height="74"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="online-Pharmacy" translatesAutoresizingMaskIntoConstraints="NO" id="JfT-Pp-cct">
+                                        <rect key="frame" x="12" y="12" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="kXj-EC-1fh"/>
+                                            <constraint firstAttribute="width" constant="50" id="wq9-Y9-0wk"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="74" id="Cff-yz-NoI"/>
+                                    <constraint firstItem="JfT-Pp-cct" firstAttribute="centerY" secondItem="Y9Y-yy-wFB" secondAttribute="centerY" id="KbX-Ji-4v8"/>
+                                    <constraint firstAttribute="height" constant="74" id="V1J-yo-cRw"/>
+                                    <constraint firstItem="JfT-Pp-cct" firstAttribute="centerX" secondItem="Y9Y-yy-wFB" secondAttribute="centerX" id="xmU-2p-LKN"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="37"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="unselect-cart" translatesAutoresizingMaskIntoConstraints="NO" id="8rG-jV-nzq">
+                                <rect key="frame" x="116" y="16" width="15" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="PCz-01-3zg"/>
+                                    <constraint firstAttribute="width" constant="15" id="wUU-bx-wLV"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="Deslavid " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bzE-9d-1Ke">
+                                <rect key="frame" x="15" y="115" width="57.5" height="16.5"/>
+                                <fontDescription key="fontDescription" name="MarkPro-Bold" family="Mark Pro" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="249" text="Rs." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nxt-xr-Ul7">
+                                <rect key="frame" x="15" y="147.5" width="21" height="18"/>
+                                <fontDescription key="fontDescription" name="MarkPro" family="Mark Pro" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="500" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s9c-uS-C6R">
+                                <rect key="frame" x="38" y="145" width="83" height="23"/>
+                                <fontDescription key="fontDescription" name="MarkPro-Bold" family="Mark Pro" pointSize="18"/>
+                                <color key="textColor" red="0.75592464208602905" green="0.086489923298358917" blue="0.43896484375" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalCompressionResistancePriority="752" verticalCompressionResistancePriority="752" text="(5mg)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RlA-id-lEi">
+                                <rect key="frame" x="72.5" y="117" width="60.5" height="13"/>
+                                <fontDescription key="fontDescription" name="MarkPro" family="Mark Pro" pointSize="10"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BXD-dp-0M2">
+                                <rect key="frame" x="101" y="0.0" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="7kY-UV-pV5"/>
+                                    <constraint firstAttribute="width" constant="40" id="pLc-tQ-vF7"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="cartIconTapped:" destination="gTV-IL-0wX" eventType="touchUpInside" id="usi-ey-6vZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Y9Y-yy-wFB" firstAttribute="top" secondItem="3nB-lx-uom" secondAttribute="top" constant="16" id="2iY-7F-pfy"/>
+                            <constraint firstItem="s9c-uS-C6R" firstAttribute="leading" secondItem="Nxt-xr-Ul7" secondAttribute="trailing" constant="2" id="46W-Fn-ykn"/>
+                            <constraint firstItem="Y9Y-yy-wFB" firstAttribute="centerX" secondItem="3nB-lx-uom" secondAttribute="centerX" id="4K4-VA-muQ"/>
+                            <constraint firstItem="Nxt-xr-Ul7" firstAttribute="leading" secondItem="bzE-9d-1Ke" secondAttribute="leading" id="Ggu-w3-rgp"/>
+                            <constraint firstAttribute="trailing" secondItem="RlA-id-lEi" secondAttribute="trailing" constant="8" id="L55-qw-BYy"/>
+                            <constraint firstItem="8rG-jV-nzq" firstAttribute="top" secondItem="Y9Y-yy-wFB" secondAttribute="top" id="RRv-cx-rIY"/>
+                            <constraint firstAttribute="trailing" secondItem="BXD-dp-0M2" secondAttribute="trailing" id="Xbt-MB-q7P"/>
+                            <constraint firstItem="bzE-9d-1Ke" firstAttribute="leading" secondItem="3nB-lx-uom" secondAttribute="leading" constant="15" id="XyE-gB-aa2"/>
+                            <constraint firstAttribute="trailing" secondItem="s9c-uS-C6R" secondAttribute="trailing" constant="20" id="a0Z-zN-5Tb"/>
+                            <constraint firstItem="BXD-dp-0M2" firstAttribute="top" secondItem="3nB-lx-uom" secondAttribute="top" id="cBL-06-tIw"/>
+                            <constraint firstAttribute="trailing" secondItem="8rG-jV-nzq" secondAttribute="trailing" constant="10" id="gDd-Gs-GZI"/>
+                            <constraint firstItem="Nxt-xr-Ul7" firstAttribute="top" secondItem="bzE-9d-1Ke" secondAttribute="bottom" constant="16" id="k75-LB-pAa"/>
+                            <constraint firstItem="RlA-id-lEi" firstAttribute="leading" secondItem="bzE-9d-1Ke" secondAttribute="trailing" id="kDA-kF-cg3"/>
+                            <constraint firstItem="8rG-jV-nzq" firstAttribute="top" secondItem="3nB-lx-uom" secondAttribute="top" constant="16" id="nwQ-OR-D3L"/>
+                            <constraint firstItem="RlA-id-lEi" firstAttribute="centerY" secondItem="bzE-9d-1Ke" secondAttribute="centerY" id="p78-BZ-e1i"/>
+                            <constraint firstItem="bzE-9d-1Ke" firstAttribute="top" secondItem="Y9Y-yy-wFB" secondAttribute="bottom" constant="25" id="yPj-tf-cL8"/>
+                            <constraint firstItem="s9c-uS-C6R" firstAttribute="centerY" secondItem="Nxt-xr-Ul7" secondAttribute="centerY" id="ym9-pf-RXX"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="12"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="3nB-lx-uom" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="55K-CE-fyp"/>
+                <constraint firstAttribute="trailing" secondItem="3nB-lx-uom" secondAttribute="trailing" constant="5" id="6Vx-Gh-pmV"/>
+                <constraint firstItem="3nB-lx-uom" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="Biv-mE-sel"/>
+                <constraint firstAttribute="bottom" secondItem="3nB-lx-uom" secondAttribute="bottom" constant="5" id="jOg-X5-ytE"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="151" height="223"/>
+            <connections>
+                <outlet property="cartImageView" destination="8rG-jV-nzq" id="Qud-jh-6Mv"/>
+                <outlet property="medicineImageView" destination="JfT-Pp-cct" id="wH1-St-iOD"/>
+                <outlet property="medicineTitle" destination="bzE-9d-1Ke" id="6ad-33-J4v"/>
+                <outlet property="priceLabel" destination="s9c-uS-C6R" id="SN1-qr-evD"/>
+                <outlet property="unitLabel" destination="RlA-id-lEi" id="rEK-IP-0VH"/>
+            </connections>
+            <point key="canvasLocation" x="81.884057971014499" y="109.15178571428571"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="online-Pharmacy" width="36" height="36"/>
+        <image name="unselect-cart" width="14" height="14.5"/>
+    </resources>
+</document>
